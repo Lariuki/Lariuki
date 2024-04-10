@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Larissa Akemi
-- 👀 I’m interested in Data Analyst, Statistic, DataVis and Machine Learning
+- 👀 I’m interested in Data Analysis, Statistic, DataVis and Machine Learning
 - 🌱 I’m currently learning SQL, Python, Algorithm, Machine Learning
 - 💞️ I’m looking to collaborate on projects related to DataVis, leveraging my skills in data analysis tools  
 - 📫 How to reach me: larissakemi@icloud.com
