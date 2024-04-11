@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on projects related to DataVis, leveraging my skills in data analysis tools  
 - 📫 How to reach me: larissakemi@icloud.com
 - 😄 Pronouns: She/her
-- ⚡ Fun fact: 
+- ⚡ Fun fact: I like surfing, stand up and snorking, but I don't know how to swim.
 
 <!---
 Lariuki/Lariuki is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
