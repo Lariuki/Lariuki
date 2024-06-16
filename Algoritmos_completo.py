@@ -1,3 +1,15 @@
+# Suponha que você tenha uma lista com 128 nomes e esteja fazendo uma pesquisa binária. Qual seria o número máximo de etapas que você levaria para encontrar o nome desejado?
+import math
+
+result = math.log2(128)
+print(result)
+
+# Suponha que você duplique o tamanho da lista. Qual seria o número máximo de etapas agora?
+
+result_dobro = math.log2(256)
+print(result_dobro)
+
+# Lista telefonica ficticia
 phone_book = [
     {'name': 'Alice', 'phone': '123-456-7890'},
     {'name': 'Bob', 'phone': '987-654-3210'},
@@ -53,3 +65,33 @@ def print_all_phone_numbers(phone_book):
         print(f"{entry['name']}: {entry['phone']}")
         
 print_all_phone_numbers(phone_book)
+
+# O tempo de execução de um algoritmo é medido por meio de seu crescimento e é expresso na notação Big O
+# A eficiência de um algoritmo é medida principalmente pela sua complexidade de tempo e espaço, utilizando a notação Big O para descrever como essas medidas crescem com o tamanho da entrada.
+import time
+
+def sample_algorithm(n):
+    # Exemplo de um algoritmo O(n)
+    total = 0
+    for i in range(n):
+        total += i
+    return total
+
+# Medição de tempo
+start_time = time.time()
+sample_algorithm(1000000)
+end_time = time.time()
+print(f"Tempo de execução: {end_time - start_time} segundos")
+
+# Medida do tempo usando a ferramentas de Profiling
+from memory_profiler import profile
+
+@profile
+def sample_algorithm(n):
+    # Exemplo de um algoritmo O(n)
+    total = 0
+    for i in range(n):
+        total += i
+    return total
+
+sample_algorithm(1000000)
