@@ -95,3 +95,54 @@ def sample_algorithm(n):
     return total
 
 sample_algorithm(1000000)
+
+# Capitulo 2
+
+# Suponha que você esteja criando um aplicativo para acompanhar as suas financas. Todos os dias você anotará tudo o que gastou e onde gastou. No final do mês, você deverá revisar os seus gastos e resumir o quanto gastou. Logo, você terá um monte de inserções e poucas leituras. 
+# Você deverá usar um array ou uma lista para implementar este aplicativo?
+# A listad deverá ser utilizada para implementar o aplicativo de acompanhamento de finanças. Isso permitirá que você faça inserções diárias de maneira eficiente e revise seus gastos mensais com facilidade.
+class FinanceTracker:
+    def __init__(self):
+        self.gastos = []
+
+    def adicionar_gasto(self, descricao, valor):
+        self.gastos.append({"descricao": descricao, "valor": valor})
+
+    def revisar_gastos(self):
+        total = sum(gasto["valor"] for gasto in self.gastos)
+        return total
+
+# Uso do aplicativo
+meu_tracker = FinanceTracker()
+meu_tracker.adicionar_gasto("Café", 5.00)
+meu_tracker.adicionar_gasto("Supermercado", 120.45)
+meu_tracker.adicionar_gasto("Transporte", 15.30)
+
+# Revisão dos gastos no final do mês
+total_gastos = meu_tracker.revisar_gastos()
+print(f"Total de gastos no mês: R${total_gastos:.2f}")
+
+# Memory LangChain
+#* A LangChain, sendo uma biblioteca em Python para processamento de linguagem natural, provavelmente utiliza listas para gerenciar a memória de interações e dados textuais devido à sua flexibilidade, dinamismo e facilidade de uso em Python. Arrays podem ser utilizados em casos específicos onde a eficiência de memória e desempenho numérico são críticos, mas para a maioria das operações de texto e interações, as listas são mais apropriadas.
+#* Neste exemplo, a SimpleMemory utiliza uma lista (self.history) para armazenar pares de interações entre o usuário e o bot. Cada interação é uma tupla adicionada à lista, demonstrando como as listas são adequadas para esse tipo de operação.
+
+class SimpleMemory:
+    def __init__(self):
+        self.history = []
+
+    def add_interaction(self, user_input, bot_response):
+        self.history.append((user_input, bot_response))
+
+    def get_history(self):
+        return self.history
+
+# Uso da memória
+memory = SimpleMemory()
+memory.add_interaction("Olá, como você está?", "Estou bem, obrigado!")
+memory.add_interaction("Qual é o clima hoje?", "Hoje está ensolarado.")
+
+# Recuperar histórico
+histórico = memory.get_history()
+for interação in histórico:
+    print(f"Usuário: {interação[0]} | Bot: {interação[1]}")
+    
