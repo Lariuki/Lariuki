@@ -5,10 +5,9 @@
 - 📫 How to reach me: larissakemi@icloud.com
 - 😄 Pronouns: She/her
 - ⚡ Fun fact: I like surfing, stand up pedal and snorking, but I can't swim.
+- 🔗 I also have another GitHub: [github.com/Lariiuki](https://github.com/Lariiuki)
 
 <!---
 Lariuki/Lariuki is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
-
-🔗 I also have another GitHub: [github.com/Lariiuki](https://github.com/Lariiuki)
 --->
